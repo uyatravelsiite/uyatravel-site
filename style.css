@@ -1,0 +1,596 @@
+/* CSS for the success message */
+.success-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #00ff00; /* Green color for success */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 9999; /* Ensure it's on top */
+}
+/* CSS for the status container and back button */
+.status-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+}
+
+.status-message {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+body{
+    background-image: url(images/uwp2529892.jpeg);
+    background-image: no-repeat;
+   font-family: "Roboto", sans-serif;
+   /* overflow-x: show; /* Disable horizontal scrollbar */
+   /* overflow-y: hidden;    */
+  
+    }
+  
+    .heading {
+      text-align: center;
+      font-size: 2.0em;
+      letter-spacing: 1px;
+      padding: 40px;
+      color: white;
+  }
+  
+  .gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 350px;
+    width: 250px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 350px;
+    width: 250px;
+     overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  .img-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  
+  
+  .transparent-box {
+    height: 350px;
+    width: 250px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header{
+  background-color: #fff;
+  height: 45px;
+}
+header a img{
+  width: 134px;
+margin-top: 4px;
+}
+.more-info-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  box-shadow: #000;
+}
+.more-info-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  height: 50%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #333;
+ background-image: linear-gradient(#333);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+  
+.intro h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-size: 100px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  }
+    
+
+body {
+ 
+  background-image: no-repeat;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.index-book-banners {
+  display: flex;
+  flex-wrap: wrap; /* Allow the banners to wrap to the next line */
+  justify-content: center; /* Center the banners horizontally */
+  margin-bottom: 10px; /* Adjust the spacing between containers as needed */
+}
+  .login {
+    border: 1px solid #ccc; /* Add a border for better separation */
+    padding: 9px; /* Add padding for spacing inside the container */
+   
+  }
+
+  .typewriter {
+    padding-top: 420px;
+    /* color: white; */
+    
+  }
+  
+  .img-deals{
+    width: 250px;
+    align-items: center;
+  }
+
+  footer {
+    background-color: #333; /* Dark grey background color */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff; /* Link text color */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.contact-parent {
+  background: #fff;
+  display: flex;
+  margin: 80px 0;
+}
+
+.contact-child {
+  display: flex;
+  flex: 1;
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+}
+
+.child1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.child1 p {
+  padding-left: 20%;
+  font-size: 20px;
+  text-shadow: 0px 0px 2px #000;
+}
+
+.child1 p span {
+  font-size: 16px;
+  color: #9df2fd;
+}
+
+.child2 {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inside-contact {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.inside-contact h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.inside-contact h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #0085e2;
+}
+
+.inside-contact input,
+.inside-contact textarea {
+  width: 100%;
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.48);
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.inside-contact input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  transition: 0.2s;
+  border: 2px solid #000;
+  margin: 30px 0;
+}
+
+.inside-contact input[type=submit]:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 991px) {
+  .contact-parent {
+    display: block;
+    width: 100%;
+  }
+
+  .child1 {
+    display: none;
+  }
+
+  .child2 {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("https://th.bing.com/th/id/OIP.prU1zPW6ChLeSL_B7ddfjgHaE8?pid=ImgDet&rs=1");
+    background-size: cover;
+    
+  }
+
+  .inside-contact input,
+  .inside-contact textarea {
+    background-color: #fff;
+  }
+}
+.inside-contact input,
+.inside-contact textarea {
+  border-radius: 5px;
+  outline: none;
+}
+
+.inside-contact input[type=submit] {
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Add CSS for responsiveness */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .contact-parent {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .contact-child {
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  .child1,
+  .child2 {
+    padding: 20px;
+  }
+}
+
+/* CSS for the success message */
+.success-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #00ff00; /* Green color for success */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 9999; /* Ensure it's on top */
+}
+
+/* Custom burger menu */
+/* Custom burger menu */
+.burger-menu {
+  position: fixed;
+  width: 5cm;
+  height: 4px; /* Increase the height for a thicker line */
+  background-color: white;
+  margin: 0 auto;
+  cursor: pointer;
+ 
+}
+
+.burger-menu::before,
+
+
+.burger-menu::before {
+  top: -10px; /* Adjust the position for a thicker line */
+}
+
+.burger-menu::after {
+  bottom: -10px; /* Adjust the position for a thicker line */
+}
+
+/* Animation for the burger menu */
+.burger-menu.active::before {
+  transform: translateY(10px) rotate(45deg); /* Adjust the translation for a thicker line */
+}
+
+.burger-menu.active::after {
+  transform: translateY(-10px) rotate(-45deg); /* Adjust the translation for a thicker line */
+}
+
+.burger-menu.active {
+  background-color: transparent;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  }
+  
+  .scroll-to-top i {
+  margin-top: 10px;
+  }
+  
+  .scroll-to-top.show {
+  display: block;
+  }
+
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+      display: none;
+    }
+  
+    .burger-menu {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links.show {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+
+  .loader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+
+.loader::after {
+content: "";
+display: block;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 4px solid #333;
+border-color: #333 transparent #333 transparent;
+animation: loaderAnimation 1s linear infinite;
+}
+
+@keyframes loaderAnimation {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+body.loading .loader {
+display: flex;
+}
+
+body.loading {
+overflow: hidden;
+}
+  
+  
